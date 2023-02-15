@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #cacaca;
+    padding: 10px;
+    margin: 50px;
+    display: flex;
+    flex-direction: row; /*row, column, row-reverse, column-reverse*/
+    justify-content: center; /**center, space-between, space-around, space-evently, flex-start, flex-end*/
+    align-items: center; /* center, flex-start, flex-end, stretch, baseline */
+    flex-wrap: wrap; /* wrap the items in container and do not overtake the container*/
+    align-content: flex-start; /* to align all items in start of containers*/
+}
+
+.item{
+    background-color: #ff0037;
+    color: #fff;
+    font-size: 35px;
+    padding: 20px;
+    margin: 10px;
+    flex-grow: 1; /* this property grow the size of the item copmared to the other*/
+}
+
+/* 
+.item-3{
+    height: 150px;
+    order: 5;
+    flex-grow: 3;
+}
+
+.item-4{
+    font-size: 70px;
+    align-self: center; /* center, flex-start, flex-end, stretch, space-between 
+    flex-basis: 75%; 
+    flex-shrink: 0;  it is not shrinking
+} */
+
+
